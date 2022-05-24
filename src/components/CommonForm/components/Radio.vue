@@ -1,0 +1,18 @@
+<template>
+  <t-radio-group v-bind="$attrs" :value="value">
+    <t-radio v-for="item in options" :label="item.value" :key="item.value">
+      {{ item.label }}
+    </t-radio>
+  </t-radio-group>
+</template>
+
+<script>
+export default {
+  props: ["field", "value", "listInfo"],
+  computed: {
+    options({ listInfo, field }) {
+      return listInfo && listInfo[field?.list];
+    }
+  }
+};
+</script>

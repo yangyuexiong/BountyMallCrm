@@ -1,0 +1,147 @@
+@import "./_flex";
+@import "./_size";
+@import "./_color";
+
+body {
+  font-family: $font-family-regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-color;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-input-left {
+  &.el-input-number input {
+    @extend .text-left;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.dialog-table {
+  .el-form-item--small.el-form-item {
+    margin-bottom: 0;
+  }
+}
+
+.ellipsis {
+  @include ellipsis();
+}
+
+.ellipsis-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.relative {
+  position: relative;
+}
+
+.global-loading {
+  z-index: 9999;
+}
+
+.round {
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+// layout
+#layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.root {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+
+  .content-box {
+    flex: 1;
+    overflow-y: hidden;
+    background: $bg-color;
+    display: flex;
+    flex-direction: column;
+
+    .main-box {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  #main-container {
+    padding: 0 20px;
+    overflow-y: auto;
+  }
+}
+
+.overflow-y {
+  overflow-y: auto;
+}

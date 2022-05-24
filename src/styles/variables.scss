@@ -1,0 +1,25 @@
+$primary-color: #409eff;
+$warning-color: #e6a23c;
+$danger-color: #f56c6c;
+$success-color: #67c23a;
+$info-color: #909399;
+$black-color: #000;
+$white-color: #fff;
+$main-color: #303133;
+$regular-color: #606266;
+$secondary-color: #909399;
+$bg-color: #f0f2f5;
+
+
+$size-map: -20 5 10 15 20 30 40 50;
+$width-map: 0 12 15 22 18 25 28 38 50 55 60 70 75 80 85 100 120 140 170 185 200 220 260 280 300 310 360 400 450 500 600 800;
+$percent-map: 50 100 200;
+$font-map: 12 13 14 16 18 20 22 24 26 40;
+$border-radius: 6;
+
+// 优雅的选择字体
+// pc端
+$font-family-medium: -apple-system, BlinkMacSystemFont, 'PingFang-SC-medium', helvetica, tahoma,
+    arial, 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+$font-family-regular: -apple-system, BlinkMacSystemFont, 'PingFang-SC-regular', helvetica, tahoma,
+    arial, 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
